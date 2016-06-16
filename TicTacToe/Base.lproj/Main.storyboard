@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,192 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8X-Xx-WoR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC3-9G-osL">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="106" y="126" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITp-nr-lLQ">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="106" y="251" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fL-WW-yAF">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="213" y="126" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-pk-0K5">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="213" y="251" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sL1-EA-nsC">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7f-6B-IjO">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="106" y="0.0" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25R-O0-JnP">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="251" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEQ-9d-drm">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="126" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUe-EJ-oHY">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.9967482003" green="0.9967482003" blue="0.9967482003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="213" y="0.0" width="86" height="101"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.090114127830000001" green="0.4837471861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352" id="CCy-af-JMP"/>
+                                    <constraint firstAttribute="width" constant="299" id="zpV-fb-FXN"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="BC3-9G-osL"/>
+                                        <exclude reference="ITp-nr-lLQ"/>
+                                        <exclude reference="7fL-WW-yAF"/>
+                                        <exclude reference="YBi-pk-0K5"/>
+                                        <exclude reference="sL1-EA-nsC"/>
+                                        <exclude reference="C7f-6B-IjO"/>
+                                        <exclude reference="25R-O0-JnP"/>
+                                        <exclude reference="TEQ-9d-drm"/>
+                                        <exclude reference="bUe-EJ-oHY"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="CCy-af-JMP"/>
+                                        <exclude reference="zpV-fb-FXN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="299" height="352"/>
+                                    <mask key="subviews">
+                                        <include reference="BC3-9G-osL"/>
+                                        <include reference="ITp-nr-lLQ"/>
+                                        <include reference="7fL-WW-yAF"/>
+                                        <include reference="YBi-pk-0K5"/>
+                                        <include reference="sL1-EA-nsC"/>
+                                        <include reference="C7f-6B-IjO"/>
+                                        <include reference="25R-O0-JnP"/>
+                                        <include reference="TEQ-9d-drm"/>
+                                        <include reference="bUe-EJ-oHY"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="CCy-af-JMP"/>
+                                        <include reference="zpV-fb-FXN"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="a8X-Xx-WoR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8F1-dG-VQm"/>
+                            <constraint firstItem="a8X-Xx-WoR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nYn-oz-fgW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="a8X-Xx-WoR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8F1-dG-VQm"/>
+                                <exclude reference="nYn-oz-fgW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="a8X-Xx-WoR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8F1-dG-VQm"/>
+                                <include reference="nYn-oz-fgW"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="neq-4Q-14I" appends="YES" id="HNB-sU-XZJ"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="eightLabel" destination="ITp-nr-lLQ" id="6XE-P9-7mB"/>
+                        <outlet property="fiveLabel" destination="BC3-9G-osL" id="e58-sa-AN3"/>
+                        <outlet property="fourLabel" destination="TEQ-9d-drm" id="bbf-aN-Dxl"/>
+                        <outlet property="newView" destination="a8X-Xx-WoR" id="nen-mW-hnj"/>
+                        <outlet property="nineLabel" destination="YBi-pk-0K5" id="5w5-rR-jpz"/>
+                        <outlet property="oneLabel" destination="sL1-EA-nsC" id="grl-dq-SAx"/>
+                        <outlet property="sevenLabel" destination="25R-O0-JnP" id="MPN-oq-tfC"/>
+                        <outlet property="sixLabel" destination="7fL-WW-yAF" id="H4J-yv-8Nh"/>
+                        <outlet property="threeLabel" destination="bUe-EJ-oHY" id="Y7B-HQ-6ky"/>
+                        <outlet property="twoLabel" destination="C7f-6B-IjO" id="Kz1-6k-PNA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="neq-4Q-14I">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="y54-BA-COM"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="130.5" y="317"/>
         </scene>
     </scenes>
 </document>
