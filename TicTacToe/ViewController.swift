@@ -83,7 +83,7 @@ class ViewController: UIViewController {
         count += 1
         
         oldValue = nextPlayLabel.text!
-        
+        print("old value \(oldValue)")
         
         if count <= 9
         {
@@ -99,8 +99,8 @@ class ViewController: UIViewController {
             }
             
             nextPlayLabel.text = currentValue
-            
-            print(nextPlayLabel)
+            print("current value \(currentValue)")
+            //print(nextPlayLabel)
 
 
         }
@@ -327,7 +327,7 @@ class ViewController: UIViewController {
             //print("dragging has stopped")
 
 
-        getValue()
+        //getValue()
         //determine where to place new symbol, otherwise place back to original location
         if CGRectContainsPoint(oneLabel.frame, dragPoint)
         {
@@ -335,7 +335,7 @@ class ViewController: UIViewController {
             if oneLabel.text == ""
             {
                 //print("before \(currentValue)")
-
+                getValue()
                 
                //print("after \(currentValue)")
                 oneLabel.text = oldValue
@@ -349,7 +349,7 @@ class ViewController: UIViewController {
             //print("tapped 2")
             if twoLabel.text == ""
             {
-                //getValue()
+                getValue()
                 twoLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
             }
@@ -361,7 +361,7 @@ class ViewController: UIViewController {
             //print("tapped 3")
             if threeLabel.text == ""
             {
-                //getValue()
+                getValue()
                 threeLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
             }
@@ -373,7 +373,7 @@ class ViewController: UIViewController {
             //print("tapped 4")
             if fourLabel.text == ""
             {
-                //getValue()
+                getValue()
                 fourLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
             }
@@ -384,7 +384,7 @@ class ViewController: UIViewController {
             //print("tapped 5")
             if fiveLabel.text == ""
             {
-                //getValue()
+                getValue()
                 fiveLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
             }
@@ -395,7 +395,7 @@ class ViewController: UIViewController {
             //print("tapped 6")
             if sixLabel.text == ""
             {
-                //getValue()
+                getValue()
                 sixLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
             }
@@ -406,7 +406,7 @@ class ViewController: UIViewController {
             //print("tapped 7")
             if sevenLabel.text == ""
             {
-                //getValue()
+                getValue()
                 sevenLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
             }
@@ -417,7 +417,7 @@ class ViewController: UIViewController {
             //print("tapped 8")
             if eightLabel.text == ""
             {
-                //getValue()
+                getValue()
                 eightLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
             }
@@ -428,7 +428,7 @@ class ViewController: UIViewController {
             //print("tapped 9")
             if nineLabel.text == ""
             {
-                //getValue()
+                getValue()
                 nineLabel.text = oldValue
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
                 
@@ -437,7 +437,7 @@ class ViewController: UIViewController {
             
         else
         {
-            count -= 1
+            //count -= 1
             //print(count)
             UIView.animateWithDuration(0.75, animations: {
                 self.nextPlayLabel.center = CGPoint(x: 0,y: 0)
