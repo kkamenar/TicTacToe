@@ -288,6 +288,7 @@
 				9F2002E11D132D4200CF5E63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -110,6 +111,15 @@
                                             <rect key="frame" x="213" y="0.0" width="86" height="101"/>
                                         </variation>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjW-rX-LWG">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="-24" width="72" height="76"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.090114127830000001" green="0.4837471861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -127,14 +137,14 @@
                                         <exclude reference="25R-O0-JnP"/>
                                         <exclude reference="TEQ-9d-drm"/>
                                         <exclude reference="bUe-EJ-oHY"/>
+                                        <exclude reference="OjW-rX-LWG"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="CCy-af-JMP"/>
                                         <exclude reference="zpV-fb-FXN"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="299" height="352"/>
+                                <variation key="widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="BC3-9G-osL"/>
                                         <include reference="ITp-nr-lLQ"/>
@@ -145,6 +155,7 @@
                                         <include reference="25R-O0-JnP"/>
                                         <include reference="TEQ-9d-drm"/>
                                         <include reference="bUe-EJ-oHY"/>
+                                        <include reference="OjW-rX-LWG"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="CCy-af-JMP"/>
@@ -152,33 +163,72 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op2-kU-AW9">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="pKI-eK-ddm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pKI-eK-ddm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-14" y="484" width="414" height="116"/>
+                                    <mask key="constraints">
+                                        <include reference="pKI-eK-ddm"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="a8X-Xx-WoR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8F1-dG-VQm"/>
+                            <constraint firstItem="op2-kU-AW9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="SRU-1Y-cF6">
+                                <variation key="widthClass=compact" constant="-15"/>
+                            </constraint>
+                            <constraint firstItem="op2-kU-AW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aLU-dt-1FF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="op2-kU-AW9" secondAttribute="trailing" constant="-10" id="gWq-lF-0oT">
+                                <variation key="widthClass=compact" constant="-15"/>
+                            </constraint>
                             <constraint firstItem="a8X-Xx-WoR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nYn-oz-fgW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="op2-kU-AW9" secondAttribute="bottom" id="zgp-fg-JR1"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="a8X-Xx-WoR"/>
+                                <exclude reference="op2-kU-AW9"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="8F1-dG-VQm"/>
                                 <exclude reference="nYn-oz-fgW"/>
+                                <exclude reference="SRU-1Y-cF6"/>
+                                <exclude reference="aLU-dt-1FF"/>
+                                <exclude reference="gWq-lF-0oT"/>
+                                <exclude reference="zgp-fg-JR1"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="a8X-Xx-WoR"/>
+                                <include reference="op2-kU-AW9"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="8F1-dG-VQm"/>
                                 <include reference="nYn-oz-fgW"/>
+                                <include reference="SRU-1Y-cF6"/>
+                                <include reference="aLU-dt-1FF"/>
+                                <include reference="gWq-lF-0oT"/>
+                                <include reference="zgp-fg-JR1"/>
                             </mask>
                         </variation>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="neq-4Q-14I" appends="YES" id="HNB-sU-XZJ"/>
+                            <outletCollection property="gestureRecognizers" destination="ujB-dd-JXR" appends="YES" id="1he-C2-bpT"/>
                         </connections>
                     </view>
                     <connections>
@@ -186,8 +236,10 @@
                         <outlet property="fiveLabel" destination="BC3-9G-osL" id="e58-sa-AN3"/>
                         <outlet property="fourLabel" destination="TEQ-9d-drm" id="bbf-aN-Dxl"/>
                         <outlet property="newView" destination="a8X-Xx-WoR" id="nen-mW-hnj"/>
+                        <outlet property="nextPlayLabel" destination="OjW-rX-LWG" id="wOZ-Hk-1ez"/>
                         <outlet property="nineLabel" destination="YBi-pk-0K5" id="5w5-rR-jpz"/>
                         <outlet property="oneLabel" destination="sL1-EA-nsC" id="grl-dq-SAx"/>
+                        <outlet property="outcomesLabel" destination="op2-kU-AW9" id="h9E-L9-mg9"/>
                         <outlet property="sevenLabel" destination="25R-O0-JnP" id="MPN-oq-tfC"/>
                         <outlet property="sixLabel" destination="7fL-WW-yAF" id="H4J-yv-8Nh"/>
                         <outlet property="threeLabel" destination="bUe-EJ-oHY" id="Y7B-HQ-6ky"/>
@@ -195,11 +247,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="neq-4Q-14I">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ujB-dd-JXR">
                     <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="y54-BA-COM"/>
+                        <action selector="onDragged:" destination="BYZ-38-t0r" id="6vE-Xk-iMY"/>
                     </connections>
-                </tapGestureRecognizer>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="130.5" y="317"/>
         </scene>
